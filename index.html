@@ -31,47 +31,85 @@
     </style>
 </head>
 <body class="font-manrope">
-    <header class="container mx-auto">
+    <header class="container mx-auto px-5 md:px-0">
         <!-- Here is navbar -->
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        <section>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm bg-white w-52 dropdown-content mt-3 z-[1] p-2 rounded-box">
+                        <li><a class="text-base text-btn-color font-bold">Home</a></li>
+                        <li><a class="text-base">About</a></li>
+                        <li><a class="text-base">Pages</a></li>
+                        <li><a class="text-base">Blog</a></li>
+                        <li><a class="text-base">Contact</a></li>
+                    </ul>
+                    </div>
+                    <a href="#" class="text-2xl md:text-4xl font-extrabold">Hockey<span class="text-btn-color">’</span>s</a>
                 </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 rounded-box w-52">
-                  <li><a class="text-base text-btn-color font-bold">Home</a></li>
-                  <li><a class="text-base">About</a></li>
-                  <li><a class="text-base">Pages</a></li>
-                  <li><a class="text-base">Blog</a></li>
-                  <li><a class="text-base">Contact</a></li>
-                </ul>
-              </div>
-              <a href="#" class="text-2xl md:text-4xl font-extrabold">Hockey<span class="text-btn-color">’</span>s</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a class="text-base text-btn-color font-bold">Home</a></li>
-                    <li><a class="text-base">About</a></li>
-                    <li><a class="text-base">Pages</a></li>
-                    <li><a class="text-base">Blog</a></li>
-                    <li><a class="text-base">Contact</a></li>
-                </ul>
-            </div>
-            <div class="navbar-end">
-                <button class="btn btn-ghost btn-circle hidden md:block">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                </button>
-                <div class="navbar-end md:ml-12 w-auto">
-                    <a class="btn bg-btn-color text-white md:text-xl text-lg font-bold">Get Ticket</a>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-base text-btn-color font-bold">Home</a></li>
+                        <li><a class="text-base">About</a></li>
+                        <li><a class="text-base">Pages</a></li>
+                        <li><a class="text-base">Blog</a></li>
+                        <li><a class="text-base">Contact</a></li>
+                    </ul>
                 </div>
-              </div>
-          </div>
+                <div class="navbar-end gap-12">
+                    <button class="md:block hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                    </button>
+                    <div class="navbar-end w-auto">
+                        <a class="btn bg-btn-color text-white md:text-xl text-lg font-bold">Get Ticket</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Here is banner section -->
+        <section class="md:py-20 py-10">
+            <div class="relative">
+                <div class="carousel w-full">
+                    <div id="slide1" class="carousel-item relative w-full md:h-3/4">
+                      <img src="src/img/slider-1.png" class="w-full h-full rounded-2xl" />
+    
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide3" class="btn btn-circle">❮</a> 
+                            <a href="#slide2" class="btn z-20 btn-circle">❯</a>
+                        </div>
+                    </div> 
+                    <div id="slide2" class="carousel-item relative w-full md:h-3/4">
+                      <img src="src/img/slider-2.jpg" class="w-full h-full rounded-2xl" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a> 
+                        <a href="#slide3" class="btn z-20 btn-circle">❯</a>
+                      </div>
+                    </div> 
+                    <div id="slide3" class="carousel-item relative w-full md:h-3/4">
+                        <img src="src/img/slider-2.jpg" class="w-full h-full rounded-2xl" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide2" class="btn btn-circle">❮</a> 
+                            <a href="#slide1" class="btn z-20 btn-circle">❯</a>
+                        </div>
+                    </div> 
+                </div>
+                <div class="w-full md:w-5/6 lg:w-3/6 p-6 md:p-4 lg:p-8 rounded-2xl mt-6 md:mt-0 bg-black absolute md:bottom-6  md:right-6">
+                    <h3 class="text-white md:text-2xl text-lg font-extrabold pb-4">Meet all the heroes from the field</h3>
+                    <p class="text-white">Explore the world of groundbreaking discoveries and technological advancements with the heroes of the scientific.</p>
+                </div>
+            </div>
+        </section>
     </header>
-    <main>
+    <main class="px-5 md:px-0">
 
+        <section class="container mx-auto">
+            
+        </section>
     </main>
-    <footer>
+    <footer class="px-5 md:px-0">
         
     </footer>
 </body>
