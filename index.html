@@ -22,6 +22,9 @@
                 clifford: '#da373d',
                 'btn-color':'#FF4240',
                 'text-color':'rgba(19, 19, 24, 0.6)',
+                'card-color-1':'rgba(188, 237, 109, 0.1)',
+                'card-color-2':'rgba(253, 221, 95, 0.1)',
+                'card-color-3':'rgba(98, 156, 243, 0.1)',
             }
             }
         }
@@ -443,9 +446,112 @@
                 </div>
               </div>
         </section>
+        <!-- Here is Get In Touch section -->
+        <section class="pb-5 md:pb-24">
+            <div class="text-center mt-8 md:mt-0 border-y-2 border-dotted py-8">
+                <h2 class="text-2xl md:text-4xl font-extrabold mb-6">Get In Touch</h2>
+                <p class="text-base font-medium text-text-color md:w-3/6 mx-auto">Connect with us instantly through our live chat feature on the www.Hockey.com website. Our chat support is available during business hours to provide real-time assistance.</p>
+            </div>
+            <!-- form and card -->
+            <div class="mt-12 flex flex-col lg:flex-row justify-between gap-6">
+                <div class="lg:p-12 p-8 border rounded-2xl lg:w-1/2 w-full">
+                    <div class="card mx-auto w-full lg:w-96 bg-card-color-1 mb-6">
+                        <div class="card-body">
+                            <div class="w-12 h-12 mb-6">
+                                <img class="w-full" src="src/img/phone.png">
+                            </div>
+                            <p class="text-text-color">Phone Number :</p>
+                            <h4 class="font-extrabold">(+62) 123-321-543</h4>
+                        </div>
+                    </div>
+                    <div class="card mx-auto w-full lg:w-96 bg-card-color-2 mb-6">
+                        <div class="card-body">
+                            <div class="w-12 h-12 mb-6">
+                                <img class="w-full" src="src/img/email.png">
+                            </div>
+                            <p class="text-text-color">Email :</p>
+                            <h4 class="font-extrabold"> hockeys@support.com</h4>
+                        </div>
+                    </div>
+                    <div class="card mx-auto w-full lg:w-96 bg-card-color-3">
+                        <div class="card-body">
+                            <div class="w-12 h-12 mb-6">
+                                <img class="w-full" src="src/img/location.png">
+                            </div>
+                            <p class="text-text-color">Location :</p>
+                            <h4 class="font-extrabold">152/1 Mohakhali Wireless Gate</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full">
+                    <form class="w-full" action="">
+                        <div class="grid lg:grid-cols-2 gap-6" >
+                            <div class="w-full">
+                                <p class="text-xl mb-4 font-bold">Your Name :</p>
+                                <input type="text" placeholder="Enter your full name" class="input text-base bg-gray-100 w-full" />
+                            </div>
+                            <div class="w-full">
+                                <p class="text-xl mb-4 font-bold">Your Email :</p>
+                                <input type="text" placeholder="Enter your email" class="input text-base bg-gray-100 w-full" />
+                            </div>
+                            <div>
+                                <p class="text-xl mb-4 font-bold">Subject :</p>
+                                <input type="text" placeholder="Enter your subject" class="input text-base bg-gray-100 w-full" />
+                            </div>
+                            <div>
+                                <p class="text-xl mb-4 font-bold">Phone Number :</p>
+                                <input type="text" placeholder="Enter your phone number" class="input text-base bg-gray-100 w-full" />
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-xl mb-4 font-bold">Message :</p>
+                            <textarea rows="16" class=" rounded-xl text-base bg-gray-100 w-full"></textarea>
+                        </div>
+                        <div class="lg:mt-8 mt-6">
+                            <button class="btn bg-btn-color text-white w-full">Send Message</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+            <!-- social -->
+            <div class="p-9 lg:my-12 my-6 rounded-xl bg-gray-100 text-center">
+                <h3 class="text-2xl font-extrabold">Social Media</h3>
+                <div>
+                    <i class="m-4 text-xl fa-brands fa-twitter"></i>
+                    <i class="m-4 text-xl fa-brands fa-facebook-f"></i>
+                    <i class="m-4 text-xl fa-brands fa-instagram"></i>
+                    <i class="m-4 text-xl fa-brands fa-github"></i>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="px-5 md:px-0">
-        
-    </footer>
+    <!-- footer section -->
+    <footer class="footer p-10 bg-black text-base-content">
+        <aside>
+          <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="fill-current"><path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path></svg>
+          <p>ACME Industries Ltd.<br/>Providing reliable tech since 1992</p>
+        </aside> 
+        <nav>
+          <header class="footer-title">Services</header> 
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav> 
+        <nav>
+          <header class="footer-title">Company</header> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav> 
+        <nav>
+          <header class="footer-title">Legal</header> 
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+      </footer>
 </body>
 </html>
